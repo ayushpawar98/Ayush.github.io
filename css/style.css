@@ -511,7 +511,7 @@ h1 span{
 }
 .about-us .video-caption {
   position: absolute;
-  top: -50px; /* you can adjust this value as per your requirement*/
+  top: -30px; /* you can adjust this value as per your requirement*/
   left: 0;
   width: 100%;
   text-align: center;
@@ -520,6 +520,23 @@ h1 span{
   font-weight:bold;
   z-index: 1;
   color:black;
+}
+.about-us .video-container {
+  position: relative;
+  padding-top: 30px;
+  padding-left: 250px;
+  height: 300px; /* you can adjust this value as per your requirement*/
+  width: 500px;
+  overflow: hidden;
+}
+
+.flex-item-left {
+  height: 300px; /* same as the height of the video-container class*/
+}
+
+.about-us iframe {
+  width: 100%;
+  object-fit: cover;
 }
 
 .flex-container {
