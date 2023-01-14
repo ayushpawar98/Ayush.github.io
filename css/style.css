@@ -690,7 +690,7 @@ h1 span{
   position:relative;
   width:100%;
   z-index:10;
-  height:600px;
+  height:500px;
   background:url('../img/background/partners3.jpg') 0px 0px fixed;
     -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -701,7 +701,7 @@ h1 span{
 .partners .opacity{
   position:absolute;
   width:100%;
-  height:600px;
+  height:500px;
   background:rgba(79,79,79,0.6);
 }
 
@@ -726,10 +726,13 @@ h1 span{
 
 .partners .logo{
   position:relative;
-  width:900px;
+  width:1800px;
   overflow:hidden;
   margin-top:50px;
   text-align:center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .partners .logo img{
@@ -739,6 +742,13 @@ h1 span{
 	-ms-transition: all 0.2s ease-in;
 	-o-transition: all 0.2s ease-in;
 	transition: all 0.2s ease-in;
+}
+
+.partners .logo div{
+  width: 20%;
+  text-align: center;
+  height: auto;
+  margin: 0 auto;
 }
 
 .partners .logo img:hover{
