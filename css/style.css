@@ -506,10 +506,10 @@ h1 span{
   border:2px solid #ada074;
 }
 
-.about-us .video-relative-container{
+.about-us .flex-item-right .video-relative-container{
   position: relative;
 }
-.about-us .video-caption {
+.about-us .flex-item-right .video-caption {
   position: absolute;
   top: -30px; /* you can adjust this value as per your requirement*/
   left: 0;
@@ -521,38 +521,32 @@ h1 span{
   z-index: 1;
   color:black;
 }
-.about-us .video-container {
-  position: relative;
-  padding-top: 30px;
-  padding-left: 250px;
-  height: 300px; /* you can adjust this value as per your requirement*/
+
+.about-us .flex-item-right .video-container {
+  position: absolute;
+  top: calc(50% + 300px);
+  left: calc(50% + 100px); /* 550px is the width of the video container */
+  transform: translateY(-50%);
   width: 500px;
+  height: 300px; /* adjust this value as per your requirement */
+  padding-top: 30px;
   overflow: hidden;
 }
 
-.flex-item-left {
-  height: 300px; /* same as the height of the video-container class*/
-}
-
-.about-us iframe {
-  width: 100%;
-  object-fit: cover;
-}
 
 .flex-container {
   display: flex;
   flex-direction: row;
   font-size: 30px;
   text-align: center;
+  height: 1100px; /* adjust as needed */
 }
 
 .flex-item-left {
-  padding: 10px;
   flex: 50%;
 }
 
 .flex-item-right {
-  padding: 10px;
   flex: 50%;
 }
 
